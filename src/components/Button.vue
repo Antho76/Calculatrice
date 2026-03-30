@@ -1,7 +1,3 @@
-<template>
-  <button type="button" :class="classes" @click="onClick" :style="style">{{ label }}</button>
-</template>
-
 <script lang="ts" setup>
 import { computed } from 'vue';
 
@@ -40,3 +36,9 @@ const onClick = () => {
   emit('click', 1);
 };
 </script>
+
+<template>
+  <button type="button" :class="classes" @click="onClick" :style="style">{{ label }}</button>
+</template>
+
+
